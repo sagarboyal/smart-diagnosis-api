@@ -10,6 +10,6 @@ server:
 
 groq:
   api-key: ${GROQ_API_KEY:}
-  model: ${GROQ_MODEL:llama3-8b-8192}
-  temperature: ${GROQ_TEMPERATURE:0.3}
-  max-tokens: ${GROQ_MAX_TOKENS:800}
+  model: ${GROQ_MODEL:llama-3.3-70b-versatile}
+  temperature: ${GROQ_TEMPERATURE:0.2}
+  max-tokens: ${GROQ_MAX_TOKENS:1024}
