@@ -85,9 +85,11 @@ Use `.env` for local/docker execution.
 Example `.env`:
 ```env
 GROQ_API_KEY=your_groq_api_key_here
-MONGO_URI=mongodb://mongodb:27017/diagnosisdb
+MONGO_URI=mongodb://localhost:27017/diagnosisdb
 SERVER_PORT=8080
 ```
+
+For Docker Compose, the app service overrides `MONGO_URI` to `mongodb://mongodb:27017/diagnosisdb` inside the Compose network.
 
 ## Quick Start
 ```bash
@@ -95,6 +97,11 @@ cp .env.example .env
 # edit .env and set GROQ_API_KEY
 docker compose up --build
 ```
+
+Services after startup:
+- API: `http://localhost:8080`
+- MongoDB: `mongodb://localhost:27017`
+- Mongo Express: `http://localhost:8081`
 
 ## cURL Examples
 ```bash

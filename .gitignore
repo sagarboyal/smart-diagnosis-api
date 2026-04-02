@@ -24,3 +24,5 @@ hs_err_pid*
 replay_pid*
 task.docx
 .idea/
+.env
+target/
