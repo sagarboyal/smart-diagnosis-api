@@ -54,7 +54,7 @@ Returns all past diagnosis records, newest first.
 ```json
 {
   "total": 42,
-  "records": [...]
+  "records": ["..."]
 }
 ```
 
